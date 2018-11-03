@@ -1,5 +1,5 @@
-.header {
-	background-color: #F0F6FA;
+header {
+	margin-bottom: 20px;
 }
 
 .logo {
@@ -26,7 +26,16 @@
 	padding: 0;
 }
 
+.test {
+	background-color: orange;
+	height: 140px;
+}
+
+.tests {
+	background-color: blue;
+	height: 140px;
+}
+
 .iimg {
 	width: 100%;
-	padding: 30px;
 }
