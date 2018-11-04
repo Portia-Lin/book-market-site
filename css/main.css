@@ -43,3 +43,7 @@ header {
 .row-books > div:nth-child(n) {
 	padding: 10px;
 }
+
+.row-books .about-itm > h3, h4 {
+	color: #007bff;
+}
