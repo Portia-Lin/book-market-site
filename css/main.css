@@ -44,6 +44,10 @@ header {
 	padding: 10px;
 }
 
-.row-books .about-itm > h3, h4 {
+.row-books .about-itm > h4 {
+	color: #007bff;
+}
+
+.row-books .about-itm > h3 {
 	color: #007bff;
 }
