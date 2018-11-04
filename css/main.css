@@ -39,3 +39,7 @@ header {
 .iimg {
 	width: 100%;
 }
+
+.row-books > div:nth-child(n) {
+	padding: 10px;
+}
