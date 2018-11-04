@@ -63,3 +63,7 @@ header {
 .about-book .book h3 {
 	color: #007bff;
 }
+
+.about-book .book-img .iimg {
+	margin-bottom: 25px;
+}
