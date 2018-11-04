@@ -52,6 +52,10 @@ header {
 	color: #007bff;
 }
 
+.about-book {
+	margin-bottom: 30px;
+}
+
 .about-book .book h4 {
 	color: #007bff;
 }
