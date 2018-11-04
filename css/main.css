@@ -1,3 +1,7 @@
+/*=========================*/
+/* СТИЛИ ОСНОВНОЙ СТРАНИЦЫ */
+/*=========================*/
+
 header {
 	margin-bottom: 20px;
 }
@@ -26,55 +30,64 @@ header {
 	padding: 0;
 }
 
-.test {
-	background-color: orange;
-	height: 140px;
-}
-
-.tests {
-	background-color: blue;
-	height: 140px;
+.row-books > div:nth-child(n) {
+	padding: 10px;
 }
 
 .iimg {
 	width: 100%;
 }
 
-.row-books > div:nth-child(n) {
-	padding: 10px;
+.about-itm {
+    display: flex;
+    flex-direction: column;
 }
 
-.row-books .about-itm > h4 {
+.about-itm .book-title {
 	color: #007bff;
 }
 
-.row-books .about-itm > h3 {
+.about-itm .book-author {
 	color: #007bff;
+	margin-bottom: 20px;
 }
+
+.about-itm .genre {
+	margin-bottom: 20px;
+}
+
+/*=========================*/
+/* СТИЛИ СТРАНИЦЫ С КНИГОЙ */
+/*=========================*/
 
 .about-book {
 	margin-bottom: 30px;
-}
-
-.about-book .book h4 {
-	color: #007bff;
-}
-
-.about-book .book h3 {
-	color: #007bff;
 }
 
 .about-book .book-img .iimg {
 	margin-bottom: 25px;
 }
 
-.book-title {}
-.book-author {}
-
-.about-itm {
-    display: flex;
-    flex-direction: column;
+.about-book .book .book-title {
+	color: #007bff;
 }
+
+.about-book .book .book-author {
+	color: #007bff;
+	margin-bottom: 25px;
+}
+
+.about-book .book .book-year {
+	margin-bottom: 40px;
+}
+
+.about-book .book .book-annotation {
+	margin-bottom: 40px;
+}
+
+/*=========================*/
+/*       МЕДИАЗАПРОСЫ      */
+/*=========================*/
 
 @media (max-width: 576px) {
 	.book-title, .book-author {
@@ -83,12 +96,4 @@ header {
 	.next {
 		justify-content: center;
 	}
-}
-
-.about-itm > p {
-	overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 10;
-    -webkit-box-orient: vertical;
 }
