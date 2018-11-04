@@ -41,7 +41,7 @@ header {
 }
 
 .row-books > div:nth-child(n) {
-	padding: 10px;
+	padding: 20px;
 }
 
 .row-books .about-itm > h4 {
@@ -74,5 +74,8 @@ header {
 @media (max-width: 576px) {
 	.book-title, .book-author {
 		text-align: center;
+	}
+	.next {
+		justify-content: center;
 	}
 }
