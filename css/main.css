@@ -71,6 +71,11 @@ header {
 .book-title {}
 .book-author {}
 
+.about-itm {
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 576px) {
 	.book-title, .book-author {
 		text-align: center;
