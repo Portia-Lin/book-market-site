@@ -1,6 +1,6 @@
-/*=========================*/
-/* СТИЛИ ОСНОВНОЙ СТРАНИЦЫ */
-/*=========================*/
+	/*=========================*/
+	/* СТИЛИ ОСНОВНОЙ СТРАНИЦЫ */
+	/*=========================*/
 
 header {
 	margin-bottom: 20px;
@@ -34,7 +34,7 @@ header {
 	padding: 10px;
 }
 
-.iimg {
+.book-img .iimg {
 	width: 100%;
 }
 
@@ -71,7 +71,6 @@ header {
 
 .about-itm .genre a:hover {
 	color: #007bff;
-	text-decoration: underline;
 }
 
 .annotation {
@@ -80,9 +79,9 @@ header {
 
 }
 
-/*=========================*/
-/* СТИЛИ СТРАНИЦЫ С КНИГОЙ */
-/*=========================*/
+	/*=========================*/
+	/* СТИЛИ СТРАНИЦЫ С КНИГОЙ */
+	/*=========================*/
 
 .about-book {
 	margin-bottom: 30px;
@@ -136,7 +135,6 @@ header {
 
 .about-book .book-description .genre a:hover {
 	color: #007bff;
-	text-decoration: underline;
 }
 
 .about-book .book-description .genre-label {
@@ -154,7 +152,6 @@ header {
 
 .about-book .book-description .book-series a:hover {
 	color: #007bff;
-	text-decoration: underline;
 }
 
 .about-book .book-description .book-series-label {
@@ -186,7 +183,7 @@ header {
 }
 
 .about-book .book-description .book-language {
-	margin-bottom: 25;
+	margin-bottom: 25px;
 }
 
 .about-book .book-description .book-language-label {
@@ -194,145 +191,145 @@ header {
 }
 
 .about-book .book-description .book-annotation-label {
-	margin-bottom: 10px;
 	color: gray;
+	margin-bottom: 10px;
 }
 
 .about-book .book-description .book-annotation-text {
 	margin-bottom: 25px;
 }
 
-/*=========================*/
-/*СТИЛИ СТРАНИЦЫ С АВТОРОМ */
-/*=========================*/
+	/*=========================*/
+	/*СТИЛИ СТРАНИЦЫ С АВТОРОМ */
+	/*=========================*/
 
 .about-author {
 	margin-bottom: 30px;
 }
 
+.about-author .author-img {
+	margin-bottom: 25px;
+}
+
 .about-author .author-img .iimg {
-	margin-bottom: 25px;
+	width: 100%;
 }
 
-.about-author .author .book-title {
-	color: #007bff;
-}
-
-.about-book .book .book-author {
+.about-author .author-description .author-title {
 	color: #007bff;
 	margin-bottom: 25px;
 }
 
-.about-book .book .book-author a:hover{
-	text-decoration: none;
-}
-
-.about-book .book .original-book-title {
+.about-author .author-description .author-birth {
 	margin-bottom: 0;
 }
 
-.about-book .book .original-book-title-label {
+.about-author .author-description .author-birth-label {
 	color: gray;
 }
 
-.about-book .book .original-book-language {
+.about-author .author-description .author-location {
 	margin-bottom: 0;
 }
 
-.about-book .book .original-book-language-label {
+.about-author .author-description .author-location-label {
 	color: gray;
 }
 
-.about-book .book .genre {
+.about-author .author-description .author-activity {
 	margin-bottom: 0;
 }
 
-.about-book .book .genre a {
+.about-author .author-description .author-activity-label {
+	color: gray;
+}
+
+.about-author .author-description .author-genre {
+	margin-bottom: 0;
+}
+
+.about-author .author-description .author-genre  a{
 	color: black;
 	text-decoration: underline;
 }
 
-.about-book .book .genre a:hover {
+.about-author .author-description .author-genre  a:hover{
 	color: #007bff;
-	text-decoration: underline;
 }
 
-.about-book .book .genre-label {
+.about-author .author-description .author-genre-label {
 	color: gray;
 }
 
-.about-book .book .book-series {
-	margin-bottom: 0;
+.about-author .author-description .author-language {
+	margin-bottom: 25px;
 }
 
-.about-book .book .book-series a {
-	color: black;
-	text-decoration: underline;
+.about-author .author-description .author-language-label {
+	color: gray;
 }
 
-.about-book .book .book-series a:hover {
+.about-author .author-description .author-biography-label {
 	color: #007bff;
-	text-decoration: underline;
-}
-
-.book-series-label {
-	color: gray;
-}
-
-.book-series-number {
-	margin-bottom: 0;
-}
-
-.book-series-number-label {
-	color: gray;
-}
-
-.about-book .book .book-year {
-	margin-bottom: 0;
-}
-
-.about-book .book .book-year-label {
-	color: gray;
-}
-
-.about-book .book .isbn {
-	margin-bottom: 0;
-}
-
-.about-book .book .isbn-label {
-	color: gray;
-}
-
-.about-book .book .book-language {
-	margin-bottom: 25;
-}
-
-.about-book .book .book-language-label {
-	color: gray;
-}
-
-.about-book .book .book-annotation-label {
 	margin-bottom: 10px;
-	color: gray;
 }
 
-.about-book .book .book-annotation-text {
+.about-author .author-description .author-biography-text {
+	margin-bottom: 7px;
+}
+
+#last-text {
 	margin-bottom: 25px;
 }
 
+.about-author .author-description .author-bibliography-label {
+	color: #007bff;
+	margin-bottom: 10px;
+}
 
-/*=========================*/
-/*       МЕДИАЗАПРОСЫ      */
-/*=========================*/
+.about-author .author-description .author-bibliography-book {
+	margin-bottom: 5px;
+}
+
+.about-author .author-description .author-bibliography-book a{
+	color: black;
+	text-decoration: underline;
+}
+
+.about-author .author-description .author-bibliography-book a:hover{
+	color: #007bff;
+}
+
+	/*=========================*/
+	/*       МЕДИАЗАПРОСЫ      */
+	/*=========================*/
 
 @media (max-width: 576px) {
+
+	/*================================*/
+	/* МЕДИАЗАПРОСЫ ОСНОВНОЙ СТРАНИЦЫ */
+	/*================================*/
+
 	.book-title, .book-author {
 		text-align: center;
 	}
 	.next  {
 		justify-content: center;
 	}
+
+	/*================================*/
+	/* МЕДИАЗАПРОСЫ СТРАНИЦЫ С КНИГОЙ */
+	/*================================*/
+
 	.taptodwn {
 		justify-content: center;
+	}
+
+	/*================================*/
+	/*МЕДИАЗАПРОСЫ СТРАНИЦЫ С АВТОРОМ */
+	/*================================*/
+
+	.author-title {
+		text-align: center;
 	}
 }
