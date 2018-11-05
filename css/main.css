@@ -77,11 +77,80 @@ header {
 	margin-bottom: 25px;
 }
 
+.original-book-title {
+	margin-bottom: 0;
+}
+
+.original-book-title-label {
+	color: gray;
+}
+
+.about-book .book .genre {
+	margin-bottom: 0;
+}
+
+.about-book .book .genre a {
+	color: black;
+	text-decoration: underline;
+}
+
+.about-book .book .genre a:hover {
+	color: #007bff;
+	text-decoration: underline;
+}
+
+.about-book .book .genre-label {
+	color: gray;
+}
+
+.about-book .book .book-series {
+	margin-bottom: 0;
+}
+
+.about-book .book .book-series a {
+	color: black;
+	text-decoration: underline;
+}
+
+.about-book .book .book-series a:hover {
+	color: #007bff;
+	text-decoration: underline;
+}
+
+.book-series-label {
+	color: gray;
+}
+
+.book-series-number {
+	margin-bottom: 0;
+}
+
+.book-series-number-label {
+	color: gray;
+}
+
 .about-book .book .book-year {
+	margin-bottom: 0;
+}
+
+.about-book .book .book-year-label {
+	color: gray;
+}
+
+.about-book .book .isbn {
 	margin-bottom: 25px;
 }
 
-.about-book .book .book-annotation {
+.about-book .book .isbn-label {
+	color: gray;
+}
+
+.about-book .book .book-annotation-label {
+	margin-bottom: 10px;
+	color: gray;
+}
+
+.about-book .book .book-annotation-text {
 	margin-bottom: 25px;
 }
 
@@ -93,7 +162,10 @@ header {
 	.book-title, .book-author {
 		text-align: center;
 	}
-	.next {
+	.next  {
+		justify-content: center;
+	}
+	.taptodwn {
 		justify-content: center;
 	}
 }
