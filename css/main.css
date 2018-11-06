@@ -331,6 +331,34 @@ header {
 }
 
 	/*=========================*/
+	/* СТИЛИ СТРАНИЦЫ АВТОРОВ  */
+	/*=========================*/
+
+.row-authors .author-card {
+	border: 1px solid #007bff;
+	padding: 10px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.row-authors .author-card .author-img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.row-authors .author-card .author-name {
+	color: #007bff;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.row-authors .author-card .details {
+	justify-content: center;
+	margin-bottom: 20px;
+}
+
+
+	/*=========================*/
 	/*       МЕДИАЗАПРОСЫ      */
 	/*=========================*/
 
