@@ -313,6 +313,24 @@ header {
 }
 
 	/*=========================*/
+	/* СТИЛИ СТРАНИЦЫ ЖАНРОВ   */
+	/*=========================*/
+
+.genre-itm{
+	background-color: #e52783;
+	margin-bottom: 20px;
+	height: 150px;
+	text-align: center;
+	padding: 10px 0;
+	border-radius: 10px;
+
+}
+
+.genre-itm img {
+	width: 25%;
+}
+
+	/*=========================*/
 	/*       МЕДИАЗАПРОСЫ      */
 	/*=========================*/
 
