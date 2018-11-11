@@ -26,10 +26,10 @@
                         <li class="nav-item ">
                             <a class="nav-link" href="/">ГОЛОВНА</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/">КНИГИ <span class="sr-only">(current)</span></a>
-                        </li>
                         <li class="nav-item active">
+                            <a class="nav-link" href="#">КНИГИ <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#">ЖАНРИ</a>
                         </li>
                         <li class="nav-item">
@@ -39,23 +39,47 @@
                 </div>
             </nav>
 		</header>
-
-        <div class="row-genres row">
-            <div class="genre-itm col-xl-3 col-lg-4 col-md-6">
-                <img src="/genres/genre.png" alt="" class="genre">
-            </div>
-            <div class="genre-itm col-xl-3 col-lg-4 col-md-6">
-                <p>жанр</p>
-            </div>
-            <div class="genre-itm col-xl-3 col-lg-4 col-md-6">
-                <p>жанр</p>
-            </div>
-            <div class="genre-itm col-xl-3 col-lg-4 col-md-6">
-                <p>жанр</p>
-            </div>
-
+        <div id="books">
+            <div class="row-books row no-gutters">
+                <template v-for="item in items">
+                    <div class="book-img col-xl-3 col-lg-2 col-md-4 col-sm-4">
+                        <img  class="iimg" :src="item.image" :alt="item.title">
+                    </div>
+                    <div class="about-itm col-xl-3 col-lg-4 col-md-8 col-sm-8">
+                        <h3 class="book-title"><a :href="item.link">{{ item.title.toUpperCase() }}</a></h3>
+                        <h4 class="book-author"><a :href="item.authorLink">{{ item.author }}</a></h4>
+                        <p class="genre">Жанр: <a href="#">{{ item.genre }}</a></p>
+                        <p class="annotation">{{item.annotation}}</p>
+                        <div class="next row no-gutters flex-grow-1 align-items-end">
+                            <div class="col-xl-12 col-md-6 col-sm-9 col-lg-9 col-9">
+                                <a class="btn btn-outline-primary btn-block" :href="item.link" role="button">Детальніше</a>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+             </div>
         </div>
-	</div>
+    </div>
+
+    <script src="/js/vue.js"></script>
+    <script src="/js/axios.js"></script>
+
+    <script>
+        new Vue({
+          el: '#books',
+          data () {
+            return {
+              items: []
+            }
+          },
+          mounted() {
+            axios
+              .get('/data/books.json')
+              .then(response => this.items = response.data)
+          }
+        })
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
